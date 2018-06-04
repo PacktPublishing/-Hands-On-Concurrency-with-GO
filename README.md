@@ -1,2 +1,1 @@
-# -Hands-On-Concurrency-with-GO
- Hands-On Concurrency with GO, published by Packt
+# The code for this repository is under development :construction_worker:
