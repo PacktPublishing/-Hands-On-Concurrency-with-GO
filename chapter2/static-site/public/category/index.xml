@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Category on My Recipes</title>
+    <link>http://sstflocal.drf.com/category/</link>
+    <description>Recent content in Category on My Recipes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sstflocal.drf.com/category/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Breakfast</title>
+      <link>http://sstflocal.drf.com/category/breakfast/</link>
+      <pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://sstflocal.drf.com/category/breakfast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dessert</title>
+      <link>http://sstflocal.drf.com/category/dessert/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://sstflocal.drf.com/category/dessert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dinner</title>
+      <link>http://sstflocal.drf.com/category/dinner/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://sstflocal.drf.com/category/dinner/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

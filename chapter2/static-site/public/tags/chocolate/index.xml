@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chocolate on My Recipes</title>
+    <link>http://sstflocal.drf.com/tags/chocolate/</link>
+    <description>Recent content in Chocolate on My Recipes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://sstflocal.drf.com/tags/chocolate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Big, Fat, Chewy Chocolate Chip Cookie</title>
+      <link>http://sstflocal.drf.com/recipes/best-big-fat-chewy-chocolate-chip-cookie/</link>
+      <pubDate>Thu, 16 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://sstflocal.drf.com/recipes/best-big-fat-chewy-chocolate-chip-cookie/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
