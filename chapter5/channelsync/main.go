@@ -9,7 +9,7 @@ func doWork(done chan bool) {
 	fmt.Println("done")
 
 	// Send a value to notify that we're done.
-	done <- false
+	done <- true
 }
 
 func main() {
