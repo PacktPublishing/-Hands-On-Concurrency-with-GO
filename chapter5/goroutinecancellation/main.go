@@ -17,7 +17,7 @@ func main() {
 }
 
 func longRunningWork(ctx context.Context, reciever <-chan struct{}) {
-	fmt.Println("going to start doing some long running works")
+	fmt.Println("Going to start doing some long running works")
 	for true {
 		select {
 		case <-ctx.Done():
