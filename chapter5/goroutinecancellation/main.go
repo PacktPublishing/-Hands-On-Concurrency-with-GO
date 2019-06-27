@@ -9,22 +9,32 @@ import (
 func main() {
 	fmt.Println("Demo of cancellation of goroutine")
 	ctx, cancel := context.WithCancel(context.Background())
-	commChannel := make(chan struct{}, 1)
-	go longRunningWork(ctx, commChannel)
-	commChannel <- struct{}{}
-	time.Sleep(5 * time.Second)
-	defer cancel()
+	trigger := make(chan struct{}, 1)
+	callback := make(chan struct{}, 1)
+	status := "READY"
+	go longRunningWork(ctx, trigger, callback, &status)
+	trigger <- struct{}{}
+	time.Sleep(2 * time.Second)
+	cancel()
+	<-callback
+	fmt.Printf("Status Value is %s\n", status)
 }
 
-func longRunningWork(ctx context.Context, reciever <-chan struct{}) {
+func longRunningWork(ctx context.Context, trigger <-chan struct{}, callback chan<- struct{}, status *string) {
 	fmt.Println("Going to start doing some long running works")
 	for true {
 		select {
 		case <-ctx.Done():
 			fmt.Println("I am being asked to stop")
+			*status = "TERMINATED"
+			callback <- struct{}{}
 			return
-		case <-reciever:
+		case <-trigger:
+			fmt.Printf("Status value is %s\n", *status)
 			fmt.Println("Doing some long running work")
+			*status = "EXECUTING"
+			fmt.Printf("Status value is %s\n", *status)
+
 		default:
 		}
 	}
