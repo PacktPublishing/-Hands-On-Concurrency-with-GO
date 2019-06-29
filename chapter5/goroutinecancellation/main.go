@@ -9,7 +9,6 @@ import (
 func main() {
 	fmt.Println("Demo of cancellation of goroutine")
 	ctx, cancel := context.WithCancel(context.Background())
-	defer cancel()
 	trigger := make(chan struct{}, 1)
 	callback := make(chan struct{}, 1)
 	status := "READY"
